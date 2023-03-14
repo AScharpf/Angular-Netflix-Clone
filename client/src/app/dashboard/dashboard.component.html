@@ -1,0 +1,21 @@
+
+<div class="navBarContainer">
+  <div class="navBar">
+  <div class="hamburger">
+    <svg viewBox="0 0 100 80" width="40" height="20" style="fill: rgb(193, 127, 51);">
+      <rect width="120" height="13" rx="8"></rect>
+      <rect y="30" width="120" height="13" rx="8"></rect>
+      <rect y="60" width="120" height="13" rx="8"></rect>
+    </svg>
+  </div>
+  <h1>Movied</h1>
+</div>
+</div>
+<div>
+  <h2>BOX OFFICE</h2>
+  <app-movie-list [movies]="movies"></app-movie-list>
+</div>
+<div *ngFor="let category of categories">
+  <h2>{{category.name | uppercase}}</h2>
+    <app-movie-list [categoryId]="category.id"></app-movie-list>
+</div>

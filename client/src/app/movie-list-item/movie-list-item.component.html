@@ -1,0 +1,26 @@
+<div class="navBarContainer">
+  <div class="navBar">
+  <div class="hamburger">
+    <svg viewBox="0 0 100 80" width="40" height="20" style="fill: rgb(193, 127, 51);">
+      <rect width="120" height="13" rx="8"></rect>
+      <rect y="30" width="120" height="13" rx="8"></rect>
+      <rect y="60" width="120" height="13" rx="8"></rect>
+    </svg>
+  </div>
+  <h1>Movied</h1>
+</div>
+</div>
+<div class="descriptionContainer">
+<div class="poster">
+<img src="https://image.tmdb.org/t/p/w300/{{movie.poster_path}}">
+</div>
+<div class="info">
+  <h2>Title {{movie.title}}</h2>
+    <h3>Tagline {{movie.tagline}}</h3>
+      <h4 *ngFor="let company of movie.production_companies">Production company {{company.name}}</h4>
+      <h4 *ngFor="let genre of movie.genres">Genre {{genre.name}}</h4>
+      <h4>STARS</h4>
+  </div>
+</div>
+<h3>Description</h3>
+
